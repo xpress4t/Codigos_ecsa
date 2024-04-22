@@ -56,3 +56,5 @@ print("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
 var = int(input("Dame un número"))
 print("El número es: ",var)
+
+# comentario 2
