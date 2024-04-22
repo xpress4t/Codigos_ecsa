@@ -2,4 +2,4 @@
 Repositorio para ejercicios
 dqwdqwdq
 werwwef 
-gerard des bueno
+gerard c la come 
