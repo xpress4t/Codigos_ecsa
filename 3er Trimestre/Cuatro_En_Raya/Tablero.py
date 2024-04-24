@@ -2,6 +2,7 @@ from Ficha import Ficha
 import random
 
 def crearTablero():
+    # Se puede imprimir el tablero de otra manera, esto es para prueba 
     CuatroEnRaya=[
     ['[ ]','[ ]','[ ]','[ ]','[ ]','[ ]','[ ]'],
     ['[ ]','[ ]','[ ]','[ ]','[ ]','[ ]','[ ]'],
