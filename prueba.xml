@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<empleados>
+    <empleado>
+        <id_empleado>1234</id_empleado>
+        <nombre>Emmanuel</nombre>
+        <apellidos>Cordova Muñoz</apellidos>
+        <departamento>Informática</departamento>
+    </empleado>
+
+    <empleado>
+        <id_empleado>5678</id_empleado>
+        <nombre>Alanis</nombre>
+        <apellidos>Nonones Muñoz</apellidos>
+        <departamento>RRHH</departamento>
+    </empleado>
+</empleados>
