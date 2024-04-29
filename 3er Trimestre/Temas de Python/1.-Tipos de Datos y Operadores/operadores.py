@@ -33,3 +33,4 @@ sopaLetras = [[random.choice(string.ascii_uppercase) for _ in range(10)] for _ i
 # Imprimir la matriz
 # for fila in sopaLetras:
 #    print(' '.join(fila))
+# comentario 1
