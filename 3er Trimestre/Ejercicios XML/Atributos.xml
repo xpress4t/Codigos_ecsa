@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<contacto cod="1">
+    <nombre>Pepito</nombre>
+    <apellidos>Los Palotes</apellidos>
+</contacto>
+
+<!-- 
+    <contacto cod="1" nombre="Pepito" apellidos="Los Palotes"></contacto>
+
+    <contacto>
+        <cod>1</cod>
+        <nombre>Pepito</nombre>
+        <apellidos>Los Palotes</apellidos>
+    </contacto>
+
+    no hay diferencia entre <contacto cod="1".....
+    y 
+    <contacto>
+        <cod>1</cod>
+            .
+            .
+            .
+    </contacto>
+--> 

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- No se puede poner ingles, español, portugues, etc para una base de datos pero si para XML-->
+<!-- Las etiquetas NO PUEDEN COMENZAR con las letras xml -->
+<curriculum>
+    <datosPersonales>
+        <nombre></nombre>
+        <ocupacion></ocupacion>
+        <contacto>
+            <telefono>+34 999999999</telefono>
+            <mail>albert@gmail.com</mail>
+            <direccion>Calle Almandrullos</direccion>
+            <linkedin>https://www.linkedin.com/login</linkedin>
+        </contacto>
+
+        <idiomas>
+            <idioma>Alemán</idioma>
+            <nivel>nativo</nivel>
+
+            <idioma>Inglés</idioma>
+            <nivel>nativo</nivel>
+
+            <idioma>Español</idioma>
+            <nivel>aprendiendo</nivel>
+        </idiomas>
+
+        <aptitudes>
+            <aptitud>Adaptabilidad</aptitud>
+            <aptitud>Trabajo en equipo</aptitud>
+            <aptitud>Creatividad</aptitud>
+            <aptitud>Perseverancia</aptitud>
+            <aptitud>Resolución de problemas</aptitud>
+        </aptitudes>
+
+        <habilidades>
+            <habilidad>Desarrollo web</habilidad>
+            <habilidad>Programación</habilidad>
+            <habilidad>Bases de datos</habilidad>
+            <habilidad>HTML5, CSS3</habilidad>
+            <habilidad>JavaScript</habilidad>
+            <habilidad>Python</habilidad>
+            <habilidad>Java</habilidad>
+            <habilidad>PHP</habilidad>
+            <habilidad>MySQL</habilidad>
+        </habilidades>
+
+        <otrosIntereses>
+            <intereses>Idiomas</intereses>
+            <intereses>Artes gráficas</intereses>
+            <intereses>Trekking</intereses>
+            <intereses>Lectura</intereses>
+            <intereses>Cocina</intereses>
+            <intereses>Viajar</intereses>
+        </otrosIntereses>
+    </datosPersonales>
+    
+    <presentacion>
+        Me considero una persona abierta, con facilidad para el trabajo en equipo y el trato con el cliente. 
+        Aunque mi experiencia se ha centrado en los servicios, siempre he tenido un desarrollo personal en el mundo de las tecnologías, 
+        culminado con una titulación en un Ciclo Formativo de Grado Superior. 
+        Soy además una persona dispuesta siempre a aprender y seguir formándome, 
+        por lo que también sería un candidato ideal para desarrollarme en nuevas áreas dentro del sector e Icanzar nuevos horizontes.
+    </presentacion>
+
+    <experienciaLaboral>
+        <trabajo>
+            <cargo></cargo>
+            <empresa></empresa>
+            <duracion></duracion>
+            <descripcion></descripcion>
+        </trabajo>
+    </experienciaLaboral>
+
+    <formacion>
+        <titulo></titulo>
+        <centro></centro>
+        <ubicacion></ubicacion>
+        <duracion></duracion>
+    </formacion>
+</curriculum>

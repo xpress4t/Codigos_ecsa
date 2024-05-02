@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<agendaTelefonica>
+    <!-- Contacto 1 -->
+    <contacto>
+        <nombre>Emmanuel</nombre>
+        <apellidos>Cordova Muñoz</apellidos>
+        <direccion>
+            <tipoDeVia>Avenida</tipoDeVia>
+            <nombreVia>Plaza Cronos</nombreVia>
+            <numero>123</numero>
+            <codigoPostal>28024</codigoPostal>
+            <localidad>Madrid</localidad>
+            <ciudad>Madrid</ciudad>
+        </direccion>
+        <email>emmanuelcm2899@gmail.com</email>
+        <telefono>
+            <casa>421 213 534</casa>
+            <movil>629 34 64 55</movil>
+            <trabajo>923 123 553</trabajo>
+        </telefono>
+        <tipoContacto>familia</tipoContacto>
+    </contacto>
+
+    <!-- Contacto 2 -->
+    <contacto>
+        <nombre>Gerhard</nombre>
+        <apellidos>Agurto Macote</apellidos>
+        <direccion>
+            <tipoDeVia>Avenida</tipoDeVia>
+            <nombreVia>Goya</nombreVia>
+            <numero>32</numero>
+            <codigoPostal>28034</codigoPostal>
+            <localidad>Lisboa</localidad>
+            <ciudad>Lisboa</ciudad>
+        </direccion>
+        <email>gerhard6969@gmail.com</email>
+        <telefono>
+            <casa>378 121 123</casa>
+            <movil>633 34 56 23</movil>
+            <trabajo>435 121 653</trabajo>
+        </telefono>
+        <tipoContacto>amigos</tipoContacto>
+    </contacto>
+
+    <!-- Contacto 3 -->
+    <contacto>
+        <nombre>Daichi</nombre>
+        <apellidos>López Valentin</apellidos>
+        <direccion>
+            <tipoDeVia>Avenida</tipoDeVia>
+            <nombreVia>Próceres</nombreVia>
+            <numero>11</numero>
+            <codigoPostal>28026</codigoPostal>
+            <localidad>Lima</localidad>
+            <ciudad>Lima</ciudad>
+        </direccion>
+        <email>daichiuwu@gmail.com</email>
+        <telefono>
+            <casa>666 233 324</casa>
+            <movil>993 92 34 23</movil>
+            <trabajo>921 412 324</trabajo>
+        </telefono>
+        <tipoContacto>trabajo</tipoContacto>
+    </contacto>
+</agendaTelefonica>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE filmoteca [
+    <!ELEMENT filmoteca (pelicula+)>
+        <!ELEMENT pelicula (titulo, director, duracion)>
+        <!-- contacto película tendrá -->
+            <!ELEMENT titulo (#PCDATA)>
+            <!ELEMENT director (#PCDATA)>
+            <!ELEMENT duracion (#PCDATA)>
+        <!-- duracion tendrá caracteres -->
+]>
+<!-- Ejercicio 1 -->
+<!-- Etiqueta que abro, etiqueta que cierro-->
+<filmoteca>
+    <pelicula>
+        <titulo>Braveheart</titulo> 
+        <director>Mel Gibson</director>
+        <duracion>180</duracion>
+    </pelicula>
+
+    <pelicula>
+        <titulo>El silencio de los inocentes</titulo>
+        <director>Jonathan Demme</director>
+        <duracion>1h 58min</duracion>
+    </pelicula>
+
+    <pelicula>
+        <titulo>Hannibal, el origen del mal</titulo>
+        <director>Peter Webber</director>
+        <duracion>2h 1min</duracion>
+    </pelicula>
+
+    <pelicula>
+        <titulo>Hannibal</titulo>
+        <director>Ridley Scott</director>
+        <duracion>2h 11min</duracion>
+    </pelicula>
+
+    <pelicula>
+        <titulo>Dragón rojo</titulo>
+        <director>Brett Ratner</director>
+        <duracion>2h 4min</duracion>
+    </pelicula>
+
+</filmoteca>

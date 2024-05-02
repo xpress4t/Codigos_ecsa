@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<agenda>
+    <!-- Contacto 1 -->
+    <contacto>
+        <nombre>Emmanuel</nombre>
+        <apellidos>Cordova Muñoz</apellidos>
+        <telefono>629 34 64 55</telefono>
+        <direccion>
+            <tipoDeVia>Avenida</tipoDeVia>
+            <nombreVia>Plaza Cronos</nombreVia>
+            <numero>123</numero>
+            <codigoPostal>28024</codigoPostal>
+            <localidad>Madrid</localidad>
+            <ciudad>Madrid</ciudad>
+            <pais>España</pais>
+        </direccion>
+        <email>emmanuelcm2899@gmail.com</email>
+    </contacto>
+
+    <!-- Contacto 2 -->
+    <contacto>
+        <nombre>Gerhard</nombre>
+        <apellidos>Agurto Macote</apellidos>
+        <telefono>633 34 56 23</telefono>
+        <direccion>
+            <tipoDeVia>Avenida</tipoDeVia>
+            <nombreVia>Goya</nombreVia>
+            <numero>32</numero>
+            <codigoPostal>28034</codigoPostal>
+            <localidad>Lisboa</localidad>
+            <ciudad>Lisboa</ciudad>
+            <pais>Portugal</pais>
+        </direccion>
+        <email>gerhard6969@gmail.com</email>
+    </contacto>
+
+    <!-- Contacto 3 -->
+    <contacto>
+        <nombre>Daichi</nombre>
+        <apellidos>López Valentin</apellidos>
+        <telefono>693 92 34 23</telefono>
+        <direccion>
+            <tipoDeVia>Avenida</tipoDeVia>
+            <nombreVia>Próceres</nombreVia>
+            <numero>11</numero>
+            <codigoPostal>28026</codigoPostal>
+            <localidad>Lima</localidad>
+            <ciudad>Lima</ciudad>
+            <pais>Perú</pais>
+        </direccion>
+        <email>daichiuwu@gmail.com</email>
+    </contacto>
+</agenda>
