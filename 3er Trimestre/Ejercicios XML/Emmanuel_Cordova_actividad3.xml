@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<filmoteca>
+    <!-- Película 1 -->
+    <pelicula>
+        <titulo>Braveheart</titulo>
+
+        <director>
+            <nombre>Mel</nombre>
+            <apellidos>Gibson</apellidos>
+            <nacionalidad>estadounidense</nacionalidad>
+        </director>
+
+        <duracion>177 minutos</duracion>
+
+        <!-- Actor 1 -->
+        <actor>
+            <nombre>Sophie</nombre>
+            <apellidos>Marceau</apellidos>
+            <fechaNacimiento>1966-11-17</fechaNacimiento>
+            <nacionalidad>francesa</nacionalidad>
+        </actor>
+
+        <!-- Actor 2 -->
+        <actor>
+            <nombre>Catherine</nombre>
+            <apellidos>McCormack</apellidos>
+            <fechaNacimiento>1974-04-03</fechaNacimiento>
+            <nacionalidad>británica</nacionalidad>
+        </actor>
+
+        <!-- Actor 3 -->
+        <actor>
+            <nombre>Angus</nombre>
+            <apellidos>Macfadyen</apellidos>
+            <fechaNacimiento>1963-09-21</fechaNacimiento>
+            <nacionalidad>británica</nacionalidad>
+        </actor>
+
+        <generoPelicula>Drama histórico</generoPelicula>
+
+        <productora>The Ladd Company Icon Productions</productora>
+    </pelicula>
+
+    <!-- Película 2 -->
+    <pelicula>
+        <titulo>El silencio de los inocentes</titulo>
+
+        <director>
+            <nombre>Jonathan</nombre>
+            <apellidos>Demme</apellidos>
+            <nacionalidad>estadounidense</nacionalidad>
+        </director>
+
+        <duracion>118 minutos</duracion>
+
+        <!-- Actor 1 -->
+        <actor>
+            <nombre>Jodi</nombre>
+            <apellidos>Foster</apellidos>
+            <fechaNacimiento>1962-11-19</fechaNacimiento>
+            <nacionalidad>estadounidense</nacionalidad>
+        </actor>
+
+        <!-- Actor 2 -->
+        <actor>
+            <nombre>Anthony</nombre>
+            <apellidos>Hopkins</apellidos>
+            <fechaNacimiento>1937-12-31</fechaNacimiento>
+            <nacionalidad>británico estadounidense</nacionalidad>
+        </actor>
+
+        <!-- Actor 3 -->
+        <actor>
+            <nombre>Scott</nombre>
+            <apellidos>Glenn</apellidos>
+            <fechaNacimiento>1941-01-26</fechaNacimiento>
+            <nacionalidad>estadounidense</nacionalidad>
+        </actor>
+        <generoPelicula>Suspenso psicológico</generoPelicula>
+        <productora>Orion Pictures</productora>
+    </pelicula>
+
+    <!-- Película 3 -->
+    <pelicula>
+        <titulo>Hannibal, el origen del mal</titulo>
+        <director>
+            <nombre>Peter</nombre>
+            <apellidos>Webber</apellidos>
+            <nacionalidad>británico</nacionalidad>
+        </director>
+        <duracion>2h 1min</duracion>
+
+        <!-- Actor 1 -->
+        <actor>
+            <nombre>Gaspard</nombre>
+            <apellidos>Ulliel</apellidos>
+            <fechaNacimiento>1984-11-25</fechaNacimiento>
+            <nacionalidad>francesa</nacionalidad>
+        </actor>
+
+        <!-- Actor 2 -->
+        <actor>
+            <nombre>Gong</nombre>
+            <apellidos>Li</apellidos>
+            <fechaNacimiento>1965-12-31</fechaNacimiento>
+            <nacionalidad>china</nacionalidad>
+        </actor>
+
+        <!-- Actor 3 -->
+        <actor>
+            <nombre>Rhys</nombre>
+            <apellidos>Ifans</apellidos>
+            <fechaNacimiento>1967-07-22</fechaNacimiento>
+            <nacionalidad>británica</nacionalidad>
+        </actor>
+        <generoPelicula>Thriller</generoPelicula>
+        <productora>Dino De Laurentiis Company</productora>
+    </pelicula>
+</filmoteca>

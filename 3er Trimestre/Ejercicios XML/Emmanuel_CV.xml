@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<curriculum>
+    <descripcion>
+        Desarrollador de aplicaciones web con un enfoque centrado en la innovación y la eficiencia. 
+        Con una sólida base en tecnologías modernas, estoy comprometido con la excelencia en el desarrollo. 
+        Mi habilidad para abordar desafíos complejos y mantenerme actualizado en las últimas tendencias tecnológicas 
+        me permite ofrecer productos finales de alta calidad.
+    </descripcion>
+
+    <perfil>
+        <nombre>Emmanuel Ismael</nombre>
+        <apellidos>Cordova Muñoz</apellidos>
+        <correo>emmanuelcm2899@gmail.com</correo>
+        <telefono>+34 629 34 64 55</telefono>
+        <linkedin>linkedin.com/in/emmanuelcm1728</linkedin>
+    </perfil>
+    
+    <educacion>
+        <grado>
+            <institucion>Universidad Nacional de Ingeniería</institucion>
+            <periodo>2021 - 2023</periodo>
+            <ubicacion>Lima - Perú</ubicacion>
+            <nombre>Grado en Matemáticas</nombre>
+        </grado>
+        
+        <tecnico>
+            <institucion>CEAC Instituto de Formación Profesional Oficial</institucion>
+            <periodo>2023 - 2025</periodo>
+            <ubicacion>Madrid, España</ubicacion>
+            <nombre>Técnico Superior en Desarrollo de Aplicaciones Web</nombre>
+        </tecnico>
+    </educacion>
+
+    <habilidadestecnicas>
+        <html>HTML 100 %</html>
+        <css>CSS 100 %</css>
+        <python>Python 60 %</python>
+        <java>Java 40 %</java>
+        <javascript>JavaScript 70 %</javascript>
+        <sql>SQL 75 %</sql>
+    </habilidadestecnicas>
+
+    <idiomas>
+        <espanol>Español: Nativo</espanol>
+        <ingles>Inglés: B1</ingles>
+        <frances>Francés: A1</frances>
+    </idiomas>
+
+    <habilidadesblandas>
+        <trabajoequipo>Trabajo en equipo</trabajoequipo>
+        <autodidactismo>Autodidacta</autodidactismo>
+        <adaptabilidad>Adaptabilidad</adaptabilidad>
+        <gestiontiempo>Gestión de tiempo</gestiontiempo>
+        <comunicacionefectiva>Comunicación afectiva</comunicacionefectiva>
+    </habilidadesblandas>
+</curriculum>

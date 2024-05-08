@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- 
+    sin símbolo: 
+        Especifica que se debe usar una vez.
+    + (mas): 
+        Especifica que se debe usar al menos una vez.
+        Una o varias veces
+-->
+<!DOCTYPE agenda [
+    <!-- Primero se hace esto, y en función de esto, se hace el documento
+    sino no pasa la validación-->
+    <!ELEMENT agenda (contacto+)>
+    <!-- una interrogacion al costado de contacto "contacto?" 
+         significa que contacto puede o no puede aparecer
+         - contacto se compone de nombre
+    -->
+        <!ELEMENT contacto (nombre)>
+        <!-- Si nombre no tiene un "+" a su costado, significa que solo es uno -->
+            <!ELEMENT nombre (#PCDATA)>
+            <!-- nombre es un -->
+]>
+<!-- Agenda se compone de contacto
+     agenda, contacto y nombre son elementos
+-->
+<agenda>
+    <contacto>
+        <nombre>Juan Carlos</nombre>
+    </contacto>
+
+    <contacto>
+        <nombre>Ana</nombre>
+    </contacto>
+</agenda>

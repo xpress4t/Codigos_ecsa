@@ -1,42 +1,33 @@
-import random
-import string
+import random as rd
+import string as str
 """
 Enunciado:
 Crea un programa en Python que tome una lista de palabras y mezcle aleatoriamente 
 los caracteres de cada palabra,
 excepto el primero y el último carácter. Por ejemplo, la palabra "Python" podría 
 transformarse en "Pytnoh" o "Pyhotn",
-mientras que "Hola" podría ser "Hloa" o "Halo".
-
-Requisitos:
+mientras que "Hola" podría ser "Hloa" o "Halo"."""
+"""
+Requisitos: 
 - La lista de palabras debe estar predefinida en el programa con al menos 5 palabras distintas.
 - Utiliza los módulos 'random' y 'string' para realizar las mezclas.
 - Asegúrate de que el primer y el último carácter de cada palabra permanezcan en su lugar.
 """
-# Lista de palabras predefinida
-lista_palabras = ["Python", "Hola", "Programación", "Desarrollo", "Inteligencia"]
-
-
-# Función para mezclar los caracteres de una palabra excepto el primero y el último
-def mezclar_palabra(palabra):
-    # Convierte la palabra en una lista de caracteres para manipularla más fácilmente
-    caracteres = list(palabra)
-
-    # Mezcla los caracteres excepto el primero y el último
-    caracteres_intermedios = random.sample(caracteres[1:-1], len(caracteres[1:-1]))
-
-    # Reconstruye la palabra mezclada manteniendo el primer y último carácter en su lugar
-    palabra_mezclada = caracteres[0] + ''.join(caracteres_intermedios) + caracteres[-1]
-
-    return palabra_mezclada
-
-
-# Mezcla las palabras de la lista
-for palabra in lista_palabras:
-    palabra_mezclada = mezclar_palabra(palabra)
-    print(f'{palabra} -> {palabra_mezclada}')
-
-
+palabras =  ["python","hola","oluifa","rectangulo","trotamundos"]
+for p in palabras:
+    if len(p) < 4:
+        print(p)
+    else:
+        letraUno = p [0]
+        ultimaLetra = p[-1]
+        complement = list()
+        for i in range (1,len(p)-1):
+            complement.append(p[i])
+        rd.shuffle(complement)
+#el join sirve para poder sacar las letras de la lista
+        palabra = letraUno + "".join(complement) + ultimaLetra
+        print(palabra)
+        
 """
 Enunciado:
 Crea un programa en Python que simule el lanzamiento de un dado. 
@@ -51,27 +42,19 @@ Requisitos:
 - Asegúrate de validar que el número de caras es un número válido mayor que 1.
 
 """
-# Función para simular el lanzamiento de un dado
-def lanzar_dado(num_caras):
-    resultado = random.randint(1, num_caras)
-    return resultado
-
-# Solicitar al usuario el número de caras del dado
-while True:
-    try:
-        num_caras = int(input("Introduce el número de caras del dado: "))
-        if num_caras < 2:
-            raise ValueError("El número de caras debe ser mayor que 1.")
-        break
-    except ValueError as e:
-        print("Error:", e)
-        continue
-
-# Lanzar el dado y mostrar el resultado
-resultado_lanzamiento = lanzar_dado(num_caras)
-print("El resultado del lanzamiento es:", resultado_lanzamiento)
-
-
+usu = int(input("dime la cantidad de caras que quieres? "))
+if usu <= 1:
+    print("resultado: ",usu)
+    print("el numero de caras es uno")
+elif usu<=6:
+    numAle = rd.randrange(1,usu)
+    print("el numero de caras del dado es :", usu)
+    print("el numero que salio es:",numAle )
+else: 
+    numAle = rd.randrange(1,usu)
+    print("el numero de caras del dado es :", usu)
+    print("el numero que salio es:",numAle )
+    
 """
 Enunciado:
 Crea un programa en Python que genere un número aleatorio entre 1 y 10 y permita al usuario adivinarlo.
@@ -85,46 +68,35 @@ Requisitos:
 - Asegúrate de capturar y manejar los errores, como entradas no numéricas.
 
 """
-def jugar_adivina_numero():
-    # Generar un número aleatorio entre 1 y 10
-    numero_aleatorio = random.randint(1, 10)
-
-    while True:
-        try:
-            # Solicitar al usuario que adivine el número
-            intento = int(input("Adivina el número entre 1 y 10: "))
-
-            # Verificar si el intento del usuario es correcto
-            if intento == numero_aleatorio:
-                print("¡Felicidades! Adivinaste el número.")
+print("Bienvenido a adivinar el numero")
+intentos = 0 
+numSecreto = rd.randrange(1,11)
+seguir = True
+while intentos <= 5:
+    try: 
+        usu = int(input("Intenta adivinar el numero.... "))
+        if numSecreto == usu:
+            print("genial has adivinado el numero")
+            intentos+=1
+            print("el numero de intentos fue de:",intentos)
+            decision = input("Genial quieres seguir jugando? 1 SI 2 NO.... ")
+            if decision.lower() == "1":
+                numSecreto = rd.randrange(1,11)
+                intentos = 0
+            elif decision.lower()== "2":
+                print("Fin del Juego")
+                seguir = False
                 break
-            elif intento < numero_aleatorio:
-                print("Demasiado bajo. Intenta nuevamente.")
-            else:
-                print("Demasiado alto. Intenta nuevamente.")
-        except ValueError:
-            print("Por favor, introduce un número válido.")
-            continue
-
-    # Preguntar al usuario si quiere jugar de nuevo
-    while True:
-        jugar_nuevamente = input("¿Quieres jugar de nuevo? (s/n): ").lower()
-        if jugar_nuevamente == 's':
-            return True
-        elif jugar_nuevamente == 'n':
-            return False
-        else:
-            print("Respuesta inválida. Por favor, responde con 's' o 'n'.")
-
-
-# Programa principal
-while True:
-    if jugar_adivina_numero():
-        continue
-    else:
-        print("¡Gracias por jugar!")
-        break
-
+        elif numSecreto <usu:
+            print("Uy el numero introducido es muy alto") 
+            intentos+= 1
+        elif numSecreto> usu:
+            print("Ups el numero introducido es bajo")
+            intentos+=1
+    except:
+        print("no puedes hacer eso")
+else:
+    print("Se te acabaron los intentos, Perdiste")
 """
 Enunciado:
 Crea un programa en Python que simule un sorteo. Dada una lista de nombres de participantes,
@@ -138,29 +110,23 @@ Requisitos:
 - Asegúrate de que cada ganador sea único y muestre los nombres de los ganadores al final.
 
 """
-# Lista de participantes
-participantes = ["Juan", "María", "Carlos", "Laura", "Pedro", "Ana"]
-
-ganadores = []
-
-# Selección del primer ganador
-ganador1 = random.choice(participantes)
-ganadores.append(ganador1)
-participantes.remove(ganador1)
-
-# Selección del segundo ganador
-ganador2 = random.choice(participantes)
-ganadores.append(ganador2)
-participantes.remove(ganador2)
-
-# Selección del tercer ganador
-ganador3 = random.choice(participantes)
-ganadores.append(ganador3)
-
-# Mostrar los ganadores
-print("Los ganadores son:")
-for i, ganador in enumerate(ganadores, start=1):
-    print(f"Ganador {i}: {ganador}")
+participantes = ["carlos","mengshi","dorian","rebeca","emmanuel","daichi","gerhard"]
+#SOLUCION 1
+"""ejemplos = rd.sample(participantes,3)
+print("Ganador 1:",ejemplos[0])
+print("Ganador 2:",ejemplos[1])
+print("Ganador 3:",ejemplos[2])
+"""
+#SOLUCION 2
+listaGanadores = list()
+while  len(listaGanadores) <= 2:
+    ganador = rd.randrange(0,len(participantes))
+    listaGanadores.append(participantes[ganador])
+    participantes.remove(participantes[ganador])
+print("Ganador 1:",listaGanadores[0])
+print("Ganador 2:",listaGanadores[1])
+print("Ganador 3:",listaGanadores[2])
+    
     
 """
 Enunciado:
@@ -175,24 +141,17 @@ Requisitos:
 - Genera un nombre de usuario para cada persona en la lista
 
 """
-# Lista de nombres completos de personas
-nombres_completos = ["Juan Pérez", "María García", "Carlos López", "Laura Martínez", "Pedro Rodríguez", "Ana Sánchez"]
-
-# Función para generar un nombre de usuario aleatorio
-def generar_nombre_usuario(nombre_completo):
-    # Obtener las iniciales del nombre y apellido
-    iniciales = ''.join(nombre[0] for nombre in nombre_completo.split())
-    # Generar una cadena aleatoria de tres letras
-    letras_aleatorias = ''.join(random.choices(string.ascii_letters, k=3))
-    # Generar un número aleatorio entre 100 y 999
-    numero_aleatorio = random.randint(100, 999)
-    # Combinar las partes para formar el nombre de usuario
-    nombre_usuario = letras_aleatorias.upper() + iniciales.upper() + str(numero_aleatorio)
-    return nombre_usuario
-
-# Generar un nombre de usuario para cada persona en la lista
-nombres_usuarios = [generar_nombre_usuario(nombre) for nombre in nombres_completos]
-
-# Mostrar los nombres de usuario generados
-for nombre_completo, nombre_usuario in zip(nombres_completos, nombres_usuarios):
-    print(f"{nombre_completo}: {nombre_usuario}")
+letras = str.ascii_letters
+listaLetras = list()
+listaNum = list()
+listaNombres = list()
+numLetra = str.digits
+#rd.sample(letras,3) --> sample coge la cadena de strings que asignes
+# y el segundo es para asignar la cantidad de letras aleatorias que necesites
+while len(listaNombres) < 5:
+    letrasAle = "".join (rd.sample(letras,3))
+    listaLetras.append(letrasAle)   
+    numAle = "". join (rd.sample(numLetra,3))
+    palabra = letrasAle + numAle 
+    listaNombres.append(palabra)
+print(listaNombres)
