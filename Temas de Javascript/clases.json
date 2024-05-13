@@ -1,0 +1,59 @@
+{
+    "estudiante1": {
+        "nombre": "Ana",
+        "edad": 22,
+        "cursos": [
+            {
+                "nombre": "BBDD",
+                "profesor": "José Luis"
+            },
+            {
+                "nombre": "Programación",
+                "profesor": "Andrés"
+            },
+            {
+                "nombre": "Lenguajes de Marcas",
+                "profesor": "Eugenio"
+            }
+        ]
+    },
+
+    "estudiante2":{
+        "nombre": "Pepito Los Palotes",
+        "edad": 24,
+        "cursos":[
+            {
+                "nombre": "BBDD",
+                "profesor": "José Luis"
+            },
+            {
+                "nombre": "Programación",
+                "profesor": "Andrés"
+            },
+            {
+                "nombre": "Lenguajes de Marcas",
+                "profesor": "Eugenio"
+            }
+        ]
+    }
+}
+
+************** Array de Objetos ***************
+
+[
+    {
+        "nombre": "Antonio",
+        "edad": 20,
+        "ciudad": "Madrid"
+    },
+    {
+        "nombre": "Franz",
+        "edad": 21,
+        "ciudad": "Sevilla"
+    },
+    {
+        "nombre": "Dars",
+        "edad": 23,
+        "ciudad": "Madrid"
+    }
+]

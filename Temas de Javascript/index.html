@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejecución de código JavaScript en HTML</title>
+</head>
+<body>
+    <script>
+        // Objetos:
+        let persona = {
+            nombre: "Emmanuel",
+            edad: 20
+        };
+
+        // Para ver el objeto
+        console.log(persona);
+
+        // Para cambiar un atributo del objeto
+        persona.nombre = "que";
+        persona["nombre"] = "importa";
+
+        // Para ver un atributo de un objeto
+        console.log(persona.nombre);
+
+        // Arrays:
+        let colores = ['rojo', 'verde', 'azul'];
+        colores[3] = 1;
+        console.log(colores[0]);
+        console.log(colores);
+        console.log(colores.length);
+
+        // Funciones:
+        function saludar() {
+            console.log('Hola XD');
+        }
+        saludar();
+
+        function saludar_a(nombre) {
+            console.log('hola ' + nombre);
+        }
+        saludar_a('Pepito');
+        saludar_a(2);
+
+        function saludar_varios(nombre1, nombre2) {
+            console.log('hola ' + nombre1 + ' y ' + nombre2);
+        }
+        saludar_varios('el CD', 'el mas CD');
+
+        // Return
+        function potencia_cuadrada(numero) {
+            numero *= numero;
+            return numero;
+        }
+        let resultado = potencia_cuadrada(3);
+        console.log('al cuadrado es: ' + resultado);
+    </script>
+</body>
+</html>

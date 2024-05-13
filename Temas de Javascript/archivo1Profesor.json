@@ -1,0 +1,47 @@
+JSON que represente:
+Producto
+Precio
+Detalles: marca, pantalla, procesador
+Stock
+
+{
+    "Producto": "PS5",
+    "Precio": 500,
+    "Detalles":{
+        "marca": "Sony",
+        "pantalla": "13 pulgadas",
+        "procesador": "Ryzen 7"
+    },
+    "Stock": 69247
+}
+
+Realiza un archivo JSON que tenga un objeto que contenga un array de objetos que representen información
+sobre tres empleados con: un id, nombre, apellidos, puesto y salario
+
+{
+    "Empleados": [
+        {
+            "id": 124234,
+            "nombre": "Albert",
+            "apellidos": "Einstein Dars",
+            "puesto": "Gerente",
+            "salario":46757
+        },
+
+        {
+            "id":894384,
+            "nombre": "Paco",
+            "apellidos": "Flores Lllanos",
+            "puesto": "Ayudante",
+            "salario":24566
+        },
+
+        {
+            "id": 534534,
+            "nombre":"Risas",
+            "apellidos":"Hulkenberg Albon",
+            "puesto": "Administrador",
+            "salario": 38934
+        }
+    ]
+}

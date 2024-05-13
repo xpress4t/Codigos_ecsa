@@ -1,0 +1,118 @@
+JSON (JavaScript Object Notation) --> formato ligero de INTERCAMBIO de datos MUY popular 
+en el desarrollo de software debido a su SIMPLICIDAD y FACILIDAD de lectura y escritura.
+ 
+Es un formato de texto que se utiliza para representar datos estructurados.
+ 
+No tienen lineas de comentarios
+ 
+Se basa en dos estructuras de datos principales:
+ 
+	- Objetos --> Colecciones NO ordenadas de pares clave-valor
+				  Los objetos se delimitan con llaves "{}"
+				  Cada par está separado por ",", mientras que la clave y el valor se separan por ":"
+ 
+				  {
+				  	"nombre": "Pepe" , 
+				  	"edad" : 31 ,
+				  	"ciudad" : "Madrid"
+				  }
+ 
+				  Claves : nombre, edad y ciudad
+				  Valores : Pepe, 31 y  Madrid
+ 
+	- Arrays -->  Colecciones ordenadas de valores
+				  Los arrays se delimitan con "[]"
+				  Los elementos del array se separan con ","
+ 
+				  [
+				  	"manzana", 
+				  	"pera", 
+				  	"naranja"	
+				  ]
+ 
+				  Array con 3 elementos indexados del 0 al 2
+ 
+---------------------------------------
+Ejemplo de Objeto con Array:
+---------------------------------------
+ 
+{
+	"nombre": "María",
+	"notas" : [7,8,9]
+}
+ 
+JSON puede anidar de diferentes formas para representar datos complejos de forma clara y legible. 
+Es independiente del lenguaje utilizado, por lo que puede ser utilizado en una amplia variedad de lenguajes
+de programación para el intercambio de datos
+ 
+---------------------------------------
+Ejemplo de Objeto con Objetos anidados
+---------------------------------------
+ 
+{
+	"estudiante":{
+		"nombre": "Ana",
+		"edad": 19,
+		"cursos": [
+			{
+				"nombre": "Base de datos",
+				"profesor" : "Jose Luis",
+				"horas": 6
+			}, 
+			{
+				"nombre": "Lenguaje de marcas",
+				"profesor" : "Eugenio",
+				"horas": 4
+			},
+			{
+				"nombre": "Programación",
+				"profesor" : "Andrés",
+				"horas": 8
+			}
+		]
+	},
+ 
+	"estudiante":{
+		"nombre": "Pepe",
+		"edad": 21,
+		"cursos": [
+			{
+				"nombre": "FOL",
+				"profesor" : "Cristina",
+				"horas": 3
+			}, 
+			{
+				"nombre": "Lenguaje de marcas",
+				"profesor" : "Eugenio",
+				"horas": 4
+			},
+			{
+				"nombre": "Sistemas informáticos",
+				"profesor" : "Jesus",
+				"horas": 8
+			}
+		]
+	}
+}
+ 
+ 
+---------------------------------------
+Ejemplo con Array de Objetos
+---------------------------------------
+[
+	{
+		"nombre":"Antonio",
+		"edad": 24,
+		"ciudad":"Valencia"
+	},
+	{
+		"nombre":"Eva",
+		"edad": 21,
+		"ciudad":"Bilbao"
+	},
+	{
+		"nombre":"Edgar",
+		"edad": 29,
+		"ciudad":"Cádiz"
+	}
+]
