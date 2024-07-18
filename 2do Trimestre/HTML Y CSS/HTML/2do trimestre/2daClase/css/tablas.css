@@ -1,0 +1,39 @@
+*{
+	font-family: "Calibri";
+	margin: 0;
+	padding: 0;
+}
+
+h1{
+	font-size: 2em;
+}
+
+h2{
+	font-size: 1.6em;
+}
+
+table{
+	border: 2px red solid;
+	margin-bottom: 2em;
+	margin-top: 1em;
+	padding: .3em;
+}
+
+td{
+	border: 1px solid;
+	padding: .5em 1.5em;
+	text-align: center;
+}
+
+#contenedor{
+	margin: 2em auto;
+	width: 80%;
+}
+
+.azul_1{
+	background: #C8FDFF;
+}
+
+.azul_2{
+	background: #E7FFFE;
+}

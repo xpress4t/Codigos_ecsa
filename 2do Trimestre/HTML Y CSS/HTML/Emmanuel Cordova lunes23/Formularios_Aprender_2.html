@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<!--Código de Gerhard-->
+<html lang="es">
+<head>
+    <title>Formulario</title>
+    <meta charset="utf-8">
+    <style>
+        *{
+        font-family: "Cambria Math";
+        }
+    </style>
+</head>
+<body>
+<h1><u>Formulario</u></h1>
+<p>Etiqueta form para formularios</p>
+<form name="nombreFormulario" action="archivo.php" method="post" enctype="application/x-www-form-urlencoded">
+    <!--– action sirve para enviar la información del formulario a un archivo -->
+    <!-- get/post formas de enviar la informacion del fomulario. Con el get la informacion se envia por la URL y es visible. No se utiliza el metodo get para cuando se envie una contraseña -->
+<fieldset>
+<legend><b>Formulario</b></legend>
+<label>Nombre:</label><br>
+<input type="text" name="nombre" autofocus required placeholder="Ingrese su nombre"><br>
+    <!--autofocus para que el cursor se focusee ahi sin necesidad de hacer algo-->
+    <!--required para indicar que es un campo requerido-->
+<label>Apellidos:</label><br>
+<input type="text" name="apellidos" required placeholder="Ingrese sus apellidos"><br>
+<label>Contraseña:</label><br>
+<input type="password" name="pass" required minlength="6" maxlength="8" required placeholder="Entre 6 y 8"><br>
+<label>Calificación:</label><br>
+<input type="number" name="nota" required step="0.1" min="0" max="10" required><br>
+<label>Correo:</label><br>
+<input type="email" name="correo" required><br>
+<label>CFGS:</label><br>
+<select name="Ciclo" required>
+<option value="">Seleccione uno</option>
+<option value="1">E</option>
+<option value="2">L</option>
+<option value="3">S</option>
+<option value="4">A</option>
+</select><br>
+<label>Mensaje:</label><br>
+<textarea name="mensaje" placeholder="Escribe tu mensaje pe cholo altok"></textarea><br>
+<label>Cursos</label><br>
+<input type="radio" name="zzz" value="1" checked>DAW<br>
+<input type="radio" name="zzz" value="2" >DAM<br>
+<input type="radio" name="zzz" value="3">ASIR<br>
+<!--el required esta ligado al name, un required basta pa un name--> 
+<label>Aficiones</label><br>
+<input type="checkbox" name="af1" value="1">Ciclismo<br>
+<input type="checkbox" name="af2" value="2">Senderismo<br>
+<input type="checkbox" name="af3" value="3">Viajar<br>
+<label>Fecha:</label>
+<input type="date" name="fecha" min="2023-01-01" max="2023-12-31"><br><br>
+<input type="submit" name="enviar" value="Envia pe caosam">
+<!--submit pa enviar la info-->
+<!--value para asignar un valor a un elemento--><br><br>
+<input type="reset" value="Limpiar">
+</fieldset>
+</form>
+</body>
+</html>

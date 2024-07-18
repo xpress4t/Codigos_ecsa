@@ -1,0 +1,89 @@
+*{
+	font-family: "Comic Sans";
+	margin: 0;
+	padding: 0;
+}
+/*
+header img{
+	width: 50%;
+}
+*/
+/* los px son medidas de unidad relativa */
+body {
+    background-image: url('../media/img/familia.jpg');
+    background-size: cover; /* Para ajustar la imagen al tamaño de la ventana del navegador */
+    background-repeat: no-repeat; /* Para evitar la repetición de la imagen */
+    background-attachment: fixed; /* Para que la imagen de fondo permanezca fija mientras se desplaza la página */
+    /* Puedes ajustar otros estilos según tus preferencias */
+	opacity: 1; /* Para ajustar el nivel de opacidad de toda la página */
+}
+
+header img{
+	width: 100%;
+}
+
+h1{
+	margin-top: 1em;
+}
+
+iframe{
+	border-radius: .5em;
+	height: 450px;
+	margin-top: 1em;
+	width: 600px;
+}
+
+/* Si le quiero meter bordes a la imagen le aumento el border: 3px solid #8E44AD; 
+	(puedo cambiar el color y tamaño al que yo quiera)*/
+img{
+	border-radius: .5em;
+}
+
+/*
+body{
+	border: 1px solid;
+	width: 50%;
+}
+*/
+
+footer{
+	margin-top: 2em;
+}
+
+#contenedor{
+	margin: 0 auto; /* Para centrar la imagen */
+	width: 80%;
+}
+
+.imagen iframe{
+	border-radius: .8em;
+	box-shadow: 5px 20px 3px rgba(0, 0, 0, .7);
+
+	/*
+	Primera medida: desplazamiento eje x
+	Segunda medida: desplazamiento eje y
+	Tercera medida: difuminado;
+	(.7) --> 70% de opacidad
+	*/
+	margin-top: 2em;
+	margin-right: 5em;
+}
+.imagen img{
+	/* Si le pongo un 50.0em será una circunferencia perfecta, 
+		pero si le pongo solo un .9 o demás parecidos, solo las esquinas serán curvas no tan pronunciadas
+	*/
+	border: 3px solid #F39C12;
+	border-radius: 50.8em;
+	box-shadow: 300px 0px 3px rgba(70, 255, 6, .7);
+	margin-top: 2em;
+}
+
+.imagen2 img{
+	border-radius: .8em;
+	box-shadow: 600px 0px 3px rgba(0, 0, 0, .7);
+	margin-top: 2em;
+}
+
+.imagen2 img:hover{
+	box-shadow: 0px 0px 10px rgba(0,0,0,.7);
+}

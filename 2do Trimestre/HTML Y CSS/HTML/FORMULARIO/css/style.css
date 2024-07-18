@@ -1,0 +1,67 @@
+/* "*" --> Selector universal */
+/* Aplica las propiedades de estilo especificadas
+   dentro de esas llaves a todos los elementos en la página. */
+*{ 
+	font-family: "Cambria Math";
+	/* Para cambiar el color de las letras "color: white;" */
+	margin: 0;
+	padding: 0;
+	background-color: #5b9fe879;
+}
+
+h1{
+	font-size: 1.8em;
+	font-family: "Calibri"
+}
+
+h2{
+	font-size: 1.3em;
+}
+
+label{
+	display: block;
+	margin-top: none;
+}
+
+textarea{
+	resize: none;
+	/* 
+		vertical: solo permite el redimensionamiento vertical.
+		horizontal: solo permite el redimensionamiento horizontal. 
+		valor none:; ninguno 
+	*/
+}
+
+input:focus,textarea:focus,select:focus{
+	background: #CDFFA4;
+	border: 3px solid red;
+}
+
+input[type=text],input[type=email],textarea{ /* Sin el [type=text] se verían mal los input */
+	padding-left: .5em; /* Para dejar un espacio determinado dentro de la caja de texto */
+	width: 80%;
+}
+
+input[type=radio],input[type=checkbox]{
+	margin-right: .4em; /* Separar por la derecha */
+}
+
+/*
+input[type=text],input[type=email]{
+	border: none;
+	border-bottom: 2px solid;
+}
+*/
+#botones{
+	margin-bottom: 1em;
+	margin-top: 4em;
+}
+
+#formulario{
+	border: 10px solid;
+	margin: 8em;
+	padding-left: 2em; /* Para dejar un espacio determinado dentro de la caja de texto */
+	width: 40%; /* Tamaño del ancho (longitud horizontal) */ 
+	background-color: #e63a3a; /* verde claro: #64FF3A */
+	border-color: orange; /* Para el borde del formulario */
+}

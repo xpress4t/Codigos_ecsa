@@ -1,0 +1,143 @@
+JSON (JavaScript Object Notation), un formato ligero de INTERCAMBIO de datos MUY popular en el desarrollo de software debido a su SIMPLICIDAD y FACILIDAD de lectura y escritura.
+
+Es un formato de texto que se utiliza para representar datos estructurados.
+
+Se basa en dos estructuras de datos principales:
+	Objetos: colecciones NO ordenadas de pares clave-valor.
+	Los objetos se delimitan con llaves {}
+	Cada par clave-valor está separado (dentro del objeto) por comas, mientras que la clave y el valor se separan con dos puntos.
+
+{
+	"nombre": "Pepe",
+	"edad": 60,
+	"ciudad": "Madrid"
+}
+
+	Claves: "nombre" "edad" "ciudad"
+	Vaores: "Pepe" 60 "Madrid"
+
+
+	Arrays: colecciones ordenadas de valores.
+	Los arrays se delimitan con corchetes[]
+	Los elementos del array se separan con comas.
+
+[
+	"manzana",
+	"pera",
+	"naranja"
+]
+
+	Array con 3 elementos, indexados de 0 a 2
+
+Ejemplo Objeto con Array
+{
+	"nombre": "María",
+	"notas": [7, 8, 9]
+}
+
+JSON se puede anidar de diferentes formas para representar datos complejos de forma clara y legible. Es independiente del leguaje, por lo que puede ser utilizado en una amplia variedad de lenguajes de programación para el intercambio de datos.
+
+Ejemplo Objeto con Objetos Anidados ********************************
+{
+	"estudiante": {
+		"nombre": "Ana",
+		"edad": 22,
+		"cursos": [
+			{
+				"nombre": "BBDD",
+				"profesor": "José Luis"
+			},
+			{
+				"nombre": "Programación",
+				"profesor": "Andrés"
+			},
+			{
+				"nombre": "Lenguajes de Marcas",
+				"profesor": "Eugenio"
+			}			
+		]
+	},
+	"estudiante":{
+		"nombre": "Pepe",
+		"edad": 20,
+		"cursos": [
+			{
+				"nombre": "BBDD",
+				"profesor": "José Luis"
+			},
+			{
+				"nombre": "Programación",
+				"profesor": "Andrés"
+			},
+			{
+				"nombre": "Lenguajes de Marcas",
+				"profesor": "Eugenio"
+			}
+		]
+	}
+}
+
+
+Array de Objetos ********************************
+[
+	{
+		"nombre": "Antonio",
+		"edad": 20,
+		"ciudad": "Madrid"
+	},
+	{
+		"nombre": "Elena",
+		"edad": 22,
+		"ciudad": "Sevilla"
+	},
+	{
+		"nombre": "Ricardo",
+		"edad": 23,
+		"ciudad": "Madrid"
+	}
+]
+
+
+JSON que represente:
+Producto
+Precio
+Detalles: marca, pantalla, procesador
+Stock
+
+{
+	"producto": "Potátil",
+	"precio": 999,
+	"detalles": {
+		"marca": "Hp",
+		"pantalla": "15 pulgadas",
+		"procesador": "Intel Core i9"
+	},
+	"stock": 63
+}
+
+Realiza un archivo JSON que tenga un objeto que contenga un array de objetos que representen información sobre tres empleados con: un id, nombre, apellidos, puesto y salario.
+{
+	"empleados": [
+		{
+			"id": 1,
+			"nombre": "Miguel",
+			"apellidos": "Pérez Sanz",
+			"puesto": "Comercial",
+			"salario": 20000
+		},
+		{
+			"id": 2,
+			"nombre": "Alicia",
+			"apellidos": "Gómez López",
+			"puesto": "Programadora",
+			"salario": 22000
+		},
+		{
+			"id": 3,
+			"nombre": "Susana",
+			"apellidos": "García Sanz",
+			"puesto": "UX",
+			"salario": 23000
+		}
+	]
+}

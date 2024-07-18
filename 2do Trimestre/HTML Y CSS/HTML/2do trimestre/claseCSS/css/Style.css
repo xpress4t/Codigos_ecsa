@@ -1,0 +1,66 @@
+/*Lineas de comentario en css*/
+/* El asterisco "*" es el selector uniersal*/
+/*em es una unidad de medida relativa al espacio q ocupa el tamaño de la M mayuscula*/
+/* #algo es identificador y .algo es clase  */
+body {
+    background-color: #3a489a;
+    font-family: "Cambria Math";
+    font-size: 20px;
+}
+
+p { 
+    color: white;
+}
+ 
+#contenedor {
+    background-color: #393939;  
+    /* Color de fondo para el contenedor */
+    border: 4px solid #000000; /* El tamaño de px es para el grosor del borde */
+    /*Borde exterior con su color*/
+    margin: 1em 1em 4em 1em;
+    /*Espaciado exterior, arriba, derecha, abajo, izq. Sentido horario*/
+    padding: 2em;
+    /*Espaciado interior*/
+    text-align: center;
+    /*Alinear texto*/
+    text-decoration: underline #04ff00;
+    /*decorar texto(subrayar)*/
+}
+
+header{
+    border: 2px solid #ff0202; 
+}
+
+main{
+    border: 2px solid #d6a3c8;
+    height: 15em;
+    width: 70%;
+    float: left;
+    
+}
+
+aside{
+    border: 2px solid #ffd900;
+    height: 15em;
+    width: 29%;
+    float: right;
+
+}
+
+footer{
+    border: 2px solid #002aff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

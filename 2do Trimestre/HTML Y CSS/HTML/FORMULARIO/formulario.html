@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>Formularios</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<section id="contenedor">
+			<h1>Aplicando CSS</h1>
+			<section id="formulario">
+				<h2>Formulario</h2>
+				<form name="formulario" action="archivo_inexistente.php" method="get" enctype="application/x-www-form-urlencoded">
+					<label>Nombre:</label>
+					<input type="text" name="nombre" autofocus required>
+
+					<label>E-mail:</label>
+					<input type="email" name="mail" required>
+
+					<label>Asunto:</label>
+					<select name="ciclo" required>
+						<option value="">Seleccione uno</option>
+						<option value="1">BBDD</option>
+						<option value="2">Programación</option>
+						<option value="3">Otro</option>
+					</select>
+
+					<label>Cursos:</label>
+					<section class="aficiones">
+						<input type="radio" name="curso" value="DAW" required>DAW
+					</section>
+
+					<section class="aficiones">
+						<input type="radio" name="curso" value="DAM">DAM
+					</section>
+
+					<section class="aficiones">
+						<input type="radio" name="curso" value="ASIR">ASIR
+					</section>
+					
+					<label>Aficiones:</label>
+					<section class="aficiones">
+						<input type="checkbox" name="af1" value="1">Ciclismo
+					</section>
+					
+					<section class="aficiones">
+						<input type="checkbox" name="af2" value="2">Senderismo
+					</section>
+					
+					<section class="aficiones">
+						<input type="checkbox" name="af3" value="3">Viajar
+					</section>
+					
+
+					<label>Fecha:</label>
+					<input type="date" name="fecha" min="2023-01-01" max="2023-12-31">
+
+					<label>Mensaje:</label>
+					<textarea name="mensaje" placeholder="pr favor, incluya su mensaje."></textarea>
+
+					<section id="botones">
+						<input type="submit" name="enviar" value="Enviar">
+						<input type="reset" value="Limpiar">
+					</section>
+				</form>
+			</section>
+		</section>
+			
+	</body>
+</html>

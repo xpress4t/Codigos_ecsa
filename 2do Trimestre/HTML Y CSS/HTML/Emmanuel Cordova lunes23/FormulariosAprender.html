@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<!--Código de Mengshi-->
+<html lang="es">
+<head>
+	<title>Formularios</title>
+	<meta charset="utf-8">
+	<style>
+		*{
+			color: gray;
+			font-family: "Cambria Math";
+		}
+	</style>
+</head>
+<body>
+	<h1>Formulario</h1>
+	<form name="formulario" action="archivo_inexistente.php" method="get" enctype="application/x-www-form-urlencoded">
+		<label>Nombre:</label>
+		<input type="text" name="nombre" autofocus required>
+<p></p>
+		<label>Contraseña:</label>
+		<input type="password" name="pass" required minlength="6" maxlength="9" placeholder="Entre 6 y 9 caracteres" required>
+<p></p>
+		<label>Calificación:</label>
+		<input type="number" name="nota" step="0.01" min="0" max="10" required> 
+<p></p>
+		<label>E-mail:</label>
+		<input type="email" name="mail" required>
+<p></p>
+		<label>CFGS</label>
+		<select name="ciclo">
+			<option value="">Seleccione uno</option>
+			<option value="1">DAW</option>
+			<option value="2">DAM</option>
+			<option value="3">ASIR</option>
+		</select>
+<p></p>
+		<label>Mensaje:</label>
+		<textarea name="mensaje" placeholder="Incluya su mensaje"></textarea>
+<p></p>
+		<label>Cursos</label>
+		<input type="radio" name="curso" value="DAW" required>DAW
+		<input type="radio" name="curso" value="DAM">DAM
+		<input type="radio" name="curso" value="ASIR">ASIR
+<p></p>
+		<label>Aficiones</label>
+		<input type="checkbox" name="af1" value="1">Ciclismo
+		<input type="checkbox" name="af2" value="2">Senderismo
+		<input type="checkbox" name="af3" value="3">Viajar
+<p></p>
+		<label>Fecha:</label>
+		<input type="date" name="fecha" min="1999-01-01" max="2023-12-31">
+<p></p>
+		<input type="submit" name="enviar" value="Enviar">
+		<input type="reset" value="Limpiar">
+		
+	</form>
+
+	<h2>Explicación</h2>
+	<p>Etiqueta form: etiqueta para formularios</p>
+
+	<p>Atributo name: sirve para asignar un nombre al elemento</p>
+	
+	<p>action: para enviar el formulario a un archivo (por ejemplo)</p>
+	
+	<p>get y post: formas de enviar el contenido (información) del formularios. Con el get, la información se envía por la URL y es visible. Bajo ningún concepto se utiliza el método get cuando se envíe una contraseña</p>
+	
+	<p>Etiqueta label: para poner un texto "asociado" al elemento de formulario</p>
+	
+	<p>Atributo type: para indicar el tipo de input (text, number, email, password, search, submit, reset, etc.)</p>
+	
+	<p>autofocus: posiciona el cursor dentro del elemento</p>
+	
+	<p>submit: es para enviar el formulario</p>
+	
+	<p>value: asigna un valor al elemento</p>
+	
+	<p>minlength y maxlength: número mínimo y máximo de caracteres de un campo (elemento)</p>
+	
+	<p>number: para introducir números enteros, salvo que utilice también el atributo step, en cuyo caso permitiría decimales.El atributo step nos sirve para enviar números decimales (0.001 permitiría enviar milésimas)</p>
+	
+	<p>min y max: rango mínimo y máximo para datos numéricos</p>
+	
+	<p>placeholder: sirve para aportar información que desaparece al escribir dentro del elemento</p>
+	
+	<p>radio: para seleccionar marcando una opción (excluyente). Pon el mismo name para todos</p>
+
+</body>
+</html>

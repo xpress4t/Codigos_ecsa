@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Página web</title>
+        <style>
+            *{
+                color: gray;
+                font-family:"Cambria Math";
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Formulario</h1>
+        <form name="formulario" action="archivo_no_existe.php" method="get" enctype="application/x-www-form-urlencoded">
+            <label>Nombre:</label>
+            <input type="text" name="nombre" autofocus required>
+
+            <label>Contraseña:</label>
+            <input type="password" name="pass" required minlength="6" maxlength="9" placeholder="Entre 6 a 9 caracteres" required>
+
+            <label>e-mail</label>
+            <input type="email" name="mail" required>
+
+            <label>Calificación</label>
+            <input type="number" name="calif" step="0.001" min="0" max="10" required>
+
+            <label>CFGS</label>
+            <select name="ciclo">
+                <option value="">Seleccione uno</option>
+                <option value="1">DAW</option>
+                <option value="1">DAM</option>
+                <option value="3">ASIR</option>
+            </select>
+
+            <label></label>
+        </form>
+    </body>
+</html>

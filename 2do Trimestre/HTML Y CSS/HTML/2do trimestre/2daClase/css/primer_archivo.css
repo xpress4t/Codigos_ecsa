@@ -1,0 +1,78 @@
+/*Lineas de comentario en css*/
+/* Equivalencias
+   16px (unidad de medida relativa) = 12pt(unidad de medida absoluta) = 100% (unidad de medida relativa) = 1em
+   M
+*/
+
+/* Universal */
+*{
+	font-family: "Pimientos", "Arial", "Calibrí";
+	margin: 0 ;
+	padding: 0;
+}
+
+/* HTML */
+ body{
+
+ }
+
+ header{
+ 	border: 3px solid #2874A6; /*grosor 3px, línea continua, color azul*/
+ 	background-color: #EAF2F8;
+ }
+
+ nav{
+ 	 border: 3px dashed #85C1E9; 
+ 	 background-color: #EAF2F8;
+
+ }
+
+ main{
+ 	border: 3px solid #45B39D; /*grosor 3px, línea continua, color verde*/
+ 	background-color: #00FF00;
+ 	display: inline-block;
+ 	width: 75%;
+ }
+
+ aside{
+ 	border: 3px solid #F39C12;
+ 	background-color: #FAD7A0;
+ 	display: inline-block;
+ 	vertical-align: top; /*Alineacion vertical,top,bottom middle*/
+ 	width: 20%;	/*Ancho*/
+ }
+
+ footer{
+ 	border: 3px solid #8E44AD;
+ 	background-color: #D7BDE2;
+ }
+
+p{
+	color: #0055C8; /* Azul */
+}
+
+/* IDENTIFICADORES */
+#contenedor{
+ 	border: 8px double #7B241C;
+}
+
+#p-dos{
+	color: #FF6600;
+}
+
+#p-uno{
+ 	color: #2EB000; /* Verde */
+}
+
+ /* CLASES */
+.margen-abajo{
+	margin-bottom: 2em;
+}
+
+.negrita{
+ 	font-weight: bold; /*Pone el texto en negrita*/
+}
+
+.padding-izquierda{
+	padding-left: 1em;
+}

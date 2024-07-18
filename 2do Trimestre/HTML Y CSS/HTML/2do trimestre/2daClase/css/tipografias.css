@@ -1,0 +1,50 @@
+/* 
+Elegir y descargar la tipografia (archivos ttf u otf)
+Subir la tipografia y obtener (descargar) el webfontkit (Webfont Generator)
+Descomprimir
+Eliminar la carpeta, archivo html y el txt
+Utilizar la tipografia mediante CSS
+
+UNA VEZ UTILIZADO Y COPIADO LO QUE HAY EN EL stylesheet.css podemos borrar ese archivo y asi poder cargar otro con el mismo nombre
+ya que la pagina donde nos descarga el kit nos da otro archivo con el mismo nombre 
+*/
+
+/* Esto se hace como para "importar" el codigo que estaba en otra hoja de css (no es necesario escribir todo, solo copiar y pegar)*/
+@font-face {
+    font-family: 'kaushan_scriptregular';
+    src: url('../fuentes/kaushanscript-regular-webfont.woff2') format('woff2'),
+         url('../fuentes/kaushanscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'delius_swash_capsregular';
+    src: url('../fuentes/deliusswashcaps-regular-webfont.woff2') format('woff2'),
+         url('../fuentes/deliusswashcaps-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+@font-face {
+    font-family: 'alex_brushregular';
+    src: url('../fuentes/alexbrush-regular-webfont.woff2') format('woff2'),
+         url('../fuentes/alexbrush-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* Y acá basicamente utilizo las fuentes que he descargado, y a donde quiero que se apliquen dichas fuentes*/
+
+h1,h3,h4,h5,h6{
+	font-family: 'kaushan_scriptregular';
+}
+
+h2{
+	font-family: 'alex_brushregular';
+}
+
+p{
+	font-family: 'delius_swash_capsregular';
+}

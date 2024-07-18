@@ -1,0 +1,42 @@
+*{
+	font-family: "Cambria Math";
+	margin: 69;
+	padding: 69;
+	color: green;
+}
+
+a{
+	text-decoration: none; /*Para quitar el subrayado de los enlaces*/
+}
+
+footer a{
+	text-decoration: none;
+}
+
+header nav ul a{
+	text-decoration: none;
+}
+
+body{
+
+}
+
+header{
+
+}
+
+nav{
+
+}
+
+main{
+
+}
+
+aside{
+
+}
+
+footer{
+
+}
